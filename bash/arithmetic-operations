@@ -1,0 +1,2 @@
+read string
+printf %.3f $(echo $string | bc -l)

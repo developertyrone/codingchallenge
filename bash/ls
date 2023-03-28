@@ -1,0 +1,3 @@
+ls -alt
+ls -p | grep -v \/
+ls -d */

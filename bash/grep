@@ -1,0 +1,31 @@
+#-w whole word
+#-E extended regex
+grep -Ei -w '(the|those|that|then)'
+
+
+#https://www.gnu.org/software/grep/manual/html_node/Back_002dreferences-and-Subexpressions.html
+grep '\([0-9]\) *\1'
+grep -e '([0-9])\1' -e '([0-9]) \1'
+grep -P "([0-9])[[:blank:]]?\1"
+grep  '\(\d\)\s*\1'
+grep  '\(\d\)\s\?\1'
+
+grep -E '([0-9]) *\1'
+
+grep -i -v -w "that"
+
+grep -rnw '/path/to/somewhere/' -e 'pattern'
+
+
+https://www.youtube.com/watch?v=WX5Zfflvdt0
+
+192.168.10.20 - - [18/Jul/2017:08:41:37 +0000] "PUT /search/tag/list HTTP/1.0" 200 5042 "http://cooper.com/homepage/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/5342 (KHTML, like Gecko) Chrome/14.0.870.0 Safari/5342"
+10.30.24.3 - - [18/Jul/2017:08:45:15 +0000] "POST /search/tag/list HTTP/1.0" 200 4939 "http://www.cole-brown.net/category/main/list/privacy/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/5322 (KHTML, like Gecko) Chrome/14.0.843.0 Safari/5322"
+10.30.24.3 - - [18/Jul/2017:08:45:15 +0000] "GET /search/tag/list HTTP/1.0" 200 4939 "http://www.cole-brown.net/category/main/list/privacy/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/5322 (KHTML, like Gecko) Chrome/14.0.843.0 Safari/5322"
+10.32.24.3 - - [18/Jul/2017:08:45:15 +0000] "GET /search/tag/list HTTP/1.0" 200 4939 "http://www.cole-brown.net/category/main/list/privacy/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/5322 (KHTML, like Gecko) Chrome/14.0.843.0 Safari/5322"
+192.168.10.21- - [18/Jul/2017:08:45:15 +0000] "POST /search/tag/list HTTP/1.0" 200 4939 "http://www.cole-brown.net/category/main/list/privacy/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/5322 (KHTML, like Gecko) Chrome/14.0.843.0 Safari/5322"
+grep 'GET' apache_log.log | cut -d' ' -f1 | sort | uniq -c | sort -r
+-------------------------------------------
+grep -o -e '31=[^|]*' -e '32=[^|]*' -e '55=[^|]*' testlog.txt | sed 'N;N;s/\n/|/g'
+---------------------------
+grep –c “ABC” file1

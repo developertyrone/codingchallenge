@@ -1,0 +1,4 @@
+uniq -c| cut -c7-
+uniq -c -i | cut -c7-
+uniq -u
+uniq -d

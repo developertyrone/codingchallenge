@@ -1,0 +1,61 @@
+i=0; arr1=()
+while IFS='' read -r value; do
+    arr1+=("$value")
+done
+printf '%s ' "${arr1[@]}"
+
+arr1=()
+while read value; do
+    arr1+=("$value")
+done
+printf '%s ' "${arr1[@]}"
+
+arr1=()
+while read value; do
+    arr1+=("$value")
+done
+printf '%s ' "${arr1[@]:3:5}"
+
+
+arr1=()
+while read value; do
+    arr1+=("$value")
+done
+for i in "${arr1[@]}";
+do
+   if [[ ${i,,} != *"a"* ]];then
+      echo $i
+   fi
+done
+
+arr1=()
+while read value; do
+    if [[ ${value,,} != *"a"* ]];then
+      arr1+=("$value")
+    fi
+done
+printf '%s\n' "${arr1[@]}"
+
+arr=($(cat))
+echo "${arr[@]} ${arr[@]} ${arr[@]}"
+
+arr=($(cat))
+echo "${#arr[@]}"
+
+Unix=('Debian' 'Red hat' 'Ubuntu' 'Suse' 'Fedora' 'UTS' 'OpenLinux');
+echo ${Unix[@]/Ubuntu/SCO Unix}
+
+arr=($(cat))
+for i in "${arr[@]}";
+do
+   printf '.%s ' "$(echo $i|cut -c2-)"
+   printf '.%s ' "${i:1}"
+done
+#printf "%s " ${arr[@]/?/.}
+
+read size
+read nums
+#IFS=', ' read -r -a array <<< "$string"
+read -a arr <<< "$nums"
+echo "${arr[@]}" | tr ' ' '\n' | sort | uniq -u
+#printf "%s\n" "${arr[@]}" | sort | uniq -u

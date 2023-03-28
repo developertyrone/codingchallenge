@@ -1,0 +1,9 @@
+sort
+sort -r
+sort -n
+sort -r -n -k2 -t$'\t'
+-r : For reverse order
+-n : numerical sort
+-k: column ordering
+-t : tab separted indicator
+sort -r -n -k2 -t '|'

@@ -1,0 +1,5 @@
+class hello {
+        file { '/tmp/helloModule':
+            content => "Hello World! #2 \n"
+        }
+}

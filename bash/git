@@ -1,0 +1,26 @@
+git config --global user.name  "Tyrone Chan"
+git config --global user.email "developertyrone@gmail.com"
+
+git checkout HEAD~1
+git reset HEAD~3
+git reset --hard HEAD~3
+git diff HEAD~3
+
+git revert --no-commit HEAD~3...HEAD
+
+git status
+git init
+git stash
+
+git branch –d [head]
+git push origin --delete <remote_branch_name>
+
+git clone
+
+git rebase -i HEAD~{{N}}
+
+explain the levels in git config and how can you configure values using them?
+system
+global
+local
+

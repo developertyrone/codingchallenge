@@ -1,0 +1,2 @@
+What command is used for remove all stopped containers, unused networks, build caches, and dangling images?
+docker system prune

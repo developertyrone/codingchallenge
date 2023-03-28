@@ -1,0 +1,1 @@
+https://levelup.gitconnected.com/python-shorthand-techniques-that-will-save-your-time-ce774b2a163c

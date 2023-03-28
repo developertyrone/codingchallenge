@@ -1,0 +1,19 @@
+https://tldp.org/LDP/abs/html/x23170.html
+https://www.grymoire.com/Unix/Sed.html#uh-10a
+https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/
+https://linuxhint.com/50_sed_command_examples/
+
+
+sed -e "s/ the / this /"
+sed -e "s/thy/your/gI"
+sed -e "s/thy/{&}/gi"
+
+sed -e 's/[0-9]\{4\}/****/;s/[0-9]\{4\}/****/;s/[0-9]\{4\}/****/'
+sed -e 's/[0-9]\{4\} [0-9]\{4\} [0-9]\{4\} \([0-9]\{4\}\)/**** **** **** \1/'
+sed -e 's/[0-9]\{4\} /**** /g'
+
+sed -e 's/\(\d\{4\}\) \(\d\{4\}\) \(\d\{4\}\) \(\d\{4\}\)/\4 \3 \2 \1/g'
+
+
+cat FIX| sed 's/\(50=[^|]*\)|/\1/g'
+cat FIX| sed -e 's/\(50=[^|]*\)|/\1/g'

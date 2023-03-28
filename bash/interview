@@ -1,0 +1,97 @@
+12. Create a directory such that anyone in the group can create a file and access any person’s file in it but none should be able to delete a file other than the one created by himself.
+
+We can create the directory giving read and execute access to everyone in the group and setting its sticky bit “t” on as follows:
+
+mkdir direc1
+chmod g+wx direc1
+chmod +t direc1
+
+13. How can you find out how long the system has been running?
+
+We can find this by using the command “uptime”.
+
+
+20. I have 2 files and I want to print the records which are common to both.
+comm -12 file1 file2
+
+31. How will you print the login names of all users on a system?
+
+/etc/shadow file has all the users listed.
+awk –F ':' '{print $1}' /etc/shadow|uniq -u
+
+32. How will you print the login names of all users on a system?
+
+/etc/shadow file has all the users listed.
+awk –F ':' '{print $1}' /etc/shadow|uniq -u
+How to set an array in Linux?
+Syntax in ksh:
+Set –A arrayname= (element1 element2 ….. element)
+In bash
+A=(element1 element2 element3 …. elementn)
+
+3x. Read lines from a file into a Bash array
+readarray -t a < /path/to/filename
+
+36. How do we delete all blank lines in a file?
+
+sed  '^ [(backslash)011(backslash)040]*$/d' file1
+where (backslash)011 is an octal equivalent of space and
+(backslash)040 is an octal equivalent of the tab
+
+37. How will I insert a line “ABCDEF” at every 100th line of a file?
+
+sed ‘100i\ABCDEF’ file1
+
+38. Write a command sequence to find all the files modified in less than 2 days and print the record count of each.
+
+find . –mtime -2 –exec wc –l {} \;
+
+42. How to check a directory exists or not using bash?
+
+Bash has many test commands to check if a file or directory exists or not and the type of the file. ‘-d’ option is used with a directory path as a conditional statement to check if the directory exists or not in bash. If the directory exists, then it will return true otherwise it will return false.
+
+Example:
+
+#!/bin/bash
+# Assign the directory with path in the variable, $path
+path="/home/ubuntu/temp"
+# Check the directory exists or not
+if [ -d "$path" ]; then
+   # Print message if the directory exists
+   echo "Directory exists"
+else
+   # Print message if the directory doesn’t exist
+   echo "Directory not exists"
+fi
+
+49. How to find out the length of a string data?
+
+‘expr’, ‘wc’ and ‘awk’ commands can be used to find out the length of a string data in bash. ‘expr’ and ‘awk’ commands use length option, ‘wc’ command uses ‘–c’ option to count the length of the string.
+
+Example:
+
+The uses of the above commands are shown in the following script.
+
+#!/bin/bash
+# Count length using `expr` length option
+echo `expr length "I like PHP"`
+# Count length using `wc` command
+echo "I like Bash" | wc -c
+# Count length using `awk` command
+echo "I like Python" | awk '{print length}'
+
+50. How to run multiple bash script in parallel?
+
+Multiple bash scripts can be executed in parallel by using nohup command. How multiple bash files can be executed in parallel from a folder is shown in the following example.
+
+Example:
+
+# Assign a folder name with the path in the variable $dir that contains
+# multiple bash files
+dir="home/Ubuntu/temp"
+
+# for loop will read each file from the directory and execute in parallel
+for script in dir/*.sh
+do
+    nohup bash "$script" &
+done
