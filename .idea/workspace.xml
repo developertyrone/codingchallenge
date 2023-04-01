@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79d70904-7cab-45c7-9aa1-16cdbb706296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/find-the-percentage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/text-wrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Weather-Observation-Station-5.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/medium/occupations.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hackerrank.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="79d70904-7cab-45c7-9aa1-16cdbb706296" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/python/collections-counter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/re-start-re-end.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/regex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/medium/BinaryTreeNode.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/medium/the-company.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/medium/the-report.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +56,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -91,8 +96,16 @@
       <updated>1680010178954</updated>
       <workItem from="1680010183150" duration="146000" />
       <workItem from="1680010367175" duration="847000" />
-      <workItem from="1680011991535" duration="2094000" />
+      <workItem from="1680011991535" duration="7904000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1680056986455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680056986455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +121,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
