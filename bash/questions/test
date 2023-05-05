@@ -1,0 +1,15 @@
+# use bash to write a multiple lines files
+cat << EOF > course.txt
+CSE201  Java Programming
+CSE303  Data Structure
+CSE408  Unix Programming
+EOF
+
+
+awk 'NR==2' course.txt
+awk '{print $2}' course.txt
+awk '{if(NR==2) print $0}' course.txt
+
+head -n 2 course.txt | tail -n 1
+
+sed -n 2p course.txt

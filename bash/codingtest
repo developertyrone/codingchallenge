@@ -1,0 +1,124 @@
+# You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+# You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+# Input: l1 = [2,4,3], l2 = [5,6,4]
+
+# Output: [7,0,8]
+
+# Explanation: 342 + 465 = 807.
+
+
+
+def sumnumber(l1,l2):
+    if len(l2) > len(l1):
+        larger = l2
+        lesser = l1
+    else:
+        larger = l1
+        lesser = l2
+
+    l3 = [0 for i in larger]
+
+    for i in range(len(larger)):
+        if i > len(lesser)-1:
+            lesser.append(0)
+        if (larger[i] + lesser[i]) >= 10:
+            l3[i] =  (larger[i] + lesser[i]) %  10
+            if i+1 > len(larger)-1:
+                l3.append(1)
+            else:
+                larger[i+1] += 1
+        else:
+            l3[i] =  (larger[i] + lesser[i])
+
+    print(l3)
+
+l1 = [1,9]
+l2 = [2,3,4]
+sumnumber(l1,l2)
+
+l1 = [1,8,2]
+l2 = [2,3,4]
+sumnumber(l1,l2)
+
+l1 = [1,9,2]
+l2 = [2,3,4]
+sumnumber(l1,l2)
+
+
+l1 = [2,4,6]
+l2 = [5,6,4]
+sumnumber(l1,l2)
+
+## The proper answer is
+def addTwoNumbers(l1, l2):
+    carry = 0
+    result = []
+
+    while l1 or l2 or carry:
+        sum = 0
+
+        if l1:
+            sum += l1.pop(0)
+        if l2:
+            sum += l2.pop(0)
+
+        sum += carry
+        carry = sum // 10
+        sum = sum % 10
+
+        result.append(sum)
+
+    return result
+
+
+// Given a resource specification as per below for VPN authorization rule
+
+// resource name: vpn_authorization_rule
+
+// resource description: defines an authorization rule for VPN to allow a specific group to access a specific CIDR block
+
+// attributes:
+
+// cidr - type: string, a CIDR notation for a CIDR block, e.g. “10.0.0.0/24”, “192.168.1.1/32”
+
+// group - type: string, group name in string
+
+// Question 1
+
+// how to implement the below mapping
+
+// allow group A to access CIDR 10.0.0.0/24
+
+// allow group B to access CIDR 10.0.1.0/24
+
+// allow group C to access CIDR 10.0.2.0/24
+
+
+
+resource "vpn_authorization_rule" "rule" {
+  for_each = toset(var.groups)
+  cidr     = each.key
+  group     =  var.name
+}
+
+
+
+//variable.tf
+variable "groups" {
+  type = map
+  default = {
+    "groupa"  = "10.0.0.0/24"
+  }
+}
+
+//values.tfvars
+variable "groups" {
+  type = map
+  default = {
+    "groupa"  = "10.0.0.0/24"
+    "groupb" = "10.0.1.0/24"
+    "groupc" = "10.0.2.0/24"
+  }
+}

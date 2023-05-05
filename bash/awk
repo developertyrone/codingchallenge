@@ -10,6 +10,10 @@ C 75 78
 D 99 88 76
 
 awk '{
+
+'
+
+awk '{
 if ($2 == "")
     print "Not all scores are available for",$1
 else
@@ -74,3 +78,33 @@ awk -F ' ' '{ print $4 " " $3 " " $2 " " $1 }'
 -----------------------------------------
 awk  '/(31|32|55)=/{x++;ORS = x%3?" | ":"\n";print}' RS="|"
 -----------------------------------
+
+awk 'NR==10' file.txt
+
+NF: Number of fields/columns in the line
+$NF: The value/content of the last field/column
+NR: Number of Record (Line) [NR will accumulate if we have multiple flies]
+FNR: File Number of Record [FNR will accumulate across files, it will start from 1 for each file]
+
+awk ' {if (substr($4,5,3) == "Jul") print substr($4,2,11), length($0)}' test.log
+
+awk -F':' 'BEGIN{OFS="=";} {print $3,$4;}' /etc/passwd
+
+#### Transpose a file #####
+awk '
+{
+    for (i = 1; i <= NF; i++) {
+        if (FNR == 1) {
+            t[i] = $i;
+        } else {
+            t[i] = t[i] " " $i
+        }
+    }
+}
+END {
+    for (i = 1; t[i] != ""; i++) {
+        print t[i]
+    }
+}
+' file.txt
+#### END ####

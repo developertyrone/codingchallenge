@@ -1,0 +1,228 @@
+#!/bin/bash
+
+echo $BASH
+
+printenv
+
+num=100
+echo $num
+
+declare -i num=100
+echo $num
+unset $num
+
+str="a"+"b"
+echo $str
+
+printf "%s is a popular string\n" $str
+
+read name
+echo $name
+
+#Check any argument is provided or not
+if [[ $# -eq 0 ]]; then
+    echo "No argument is given."
+    exit 0
+fi
+#Store the first argument value
+color=$1
+# Print the argument with other string
+printf "You favorite color is %s\n" $color
+
+
+# Declare a simple numeric array
+arr1=( CodeIgniter Laravel ReactJS )
+# Print the first element value of $arr1
+echo ${arr1[0]}
+# Declare a numeric array using declare command
+declare -a arr2=( HTML CSS JavaScript )
+# Print the second element value of $arr2
+echo ${arr2[1]}
+# Declare an associative array using declare statement
+declare -A arr3=( [framework]=Laravel [CMS]=Wordpress [Library]=JQuery )
+# Print the third element value of $arr3
+echo ${arr3[Library]}
+
+if [ condition ];
+then
+statements
+fi
+
+if [ condition ]; then
+statements 1
+else
+statement 2
+fi
+
+if [ condition ]; then
+statement 1
+elif [ condition ]; then
+statement 2
+else
+statement n
+fi
+
+# Assign a value to $n
+n=30
+# Check $n is greater than 100 or not
+if [ $n -gt 100 ]; then
+    echo "$n is less than 100"
+# Check $n id greater than 50 or not
+elif [ $n -gt 50 ]; then
+    echo "$n is less than 50"
+else
+    echo "$n is less than 50"
+fi
+
+# Check $n is even or odd using ‘==’ operator
+if (( $o == "even" )); then
+     echo "The number is even"
+else
+     echo "The number is odd"
+fi
+
+
+#!/bin/bash
+#Initialize the variable $ticket
+ticket=101
+# Compare the value of $ticket with 23, 101 and 503
+case $ticket in
+23)
+# Print message if the value is 23
+echo "You got the first prize";;
+101)
+# Print message if the value is 101
+echo  "You got the second prize";;
+503)
+# Print message if the value is 503
+echo  "You got the third prize";;
+*)
+# Print message if the value does not match with 23, 101 and 503
+echo "Sorry, try for the next time"
+exit 0;;
+esac
+
+# Initialize $n
+n=5
+# Calculate the square of 5-1 using while loop
+while [ $n -gt 0 ]
+do
+   sqr=$((n*n))
+   echo "The square of $n is $sqr"
+   ((n--))
+done
+
+# Calculate the square of 5-1 using for loop
+for (( i=5; i>0; i-- ))
+do
+   sqr=$((i*i))
+   echo "The square of $i is $sqr"
+done
+
+# Initialize $x
+x=5
+
+x=10
+y=35
+
+# Declare the function
+myFunc () {
+   # Declare the local variable $x
+   local x=15
+
+   # Re-assign the global variable $y
+   y=25
+
+   # Calculate the sum of $x and $y
+   z=$((x+y))
+
+   # Print the sum of a local variable, $x, and global variable, $y
+   echo "The sum of $x and $y equal to $z"
+}
+# Call the function
+myFunc
+# Print the sum of global variables, $x, and $y
+echo "The sum of $x and $y equal to $z"
+
+# Initialize a string value into $string
+string="Python Scripting Language"
+# Cut the string value from the position 7 to the end of the string
+echo ${string:7}
+# Cut the string value of 9 characters from the position 7
+echo ${string:7:9}
+# Cut the string value from 17 to 20
+echo ${string:17:-4}
+
+# Calculating the subtraction by using expr and parameter expansion
+var1=$( expr 120 - 100 )
+# print the result
+echo $var1
+# Calculate the addition by using let command
+let var2=200+300
+# Print the rsult
+echo $var2
+# Calculate and print the value of division using ‘bc’ to get the result
+# with fractional value
+echo "scale=2; 44/7" | bc
+# Calculate the value of multiplication using double brackets
+var3=$(( 5*3 ))
+# Print the result
+echo $var3
+
+# Calculating the subtraction by using expr and parameter expansion
+var1=$( expr 120 - 100 )
+# print the result
+echo $var1
+# Calculate the addition by using let command
+let var2=200+300
+# Print the rsult
+echo $var2
+# Calculate and print the value of division using ‘bc’ to get the result
+# with fractional value
+echo "scale=2; 44/7" | bc
+# Calculate the value of multiplication using double brackets
+var3=$(( 5*3 ))
+# Print the result
+echo $var3
+
+# Initialize the filename to the variable, $filename
+filename="course.txt"
+
+# Check the file exists or not by using -f option
+if [ -f "$filename" ]; then
+    # Print message if the file exists
+    echo "$filename exists"
+else
+    # Print message if the file doesn't exist
+    echo "$filename not exists"
+    # Terminate the script
+    exit 1
+fi
+
+# Count the length of the file if the file exists
+length=`wc -c $filename`
+
+# Print the length of the file
+echo "Total characters - $length"
+
+
+#!/bin/bash
+# Declare ':' as delimiter for splitting the text
+IFS=":"
+# Assign text data with ':' to $text
+text="Red:Green:Blue"
+# for loop will read each word after splitting the text based on IFS
+for val in $text; do
+    # Print the word
+    echo $val
+done
+
+# Assign a folder name with the path in the variable $dir that contains
+# multiple bash files
+dir="home/Ubuntu/temp"
+
+# for loop will read each file from the directory and execute in parallel
+for script in dir/*.sh
+do
+    nohup bash "$script" &
+done
