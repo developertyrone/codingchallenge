@@ -1,5 +1,6 @@
 from typing import List
-
+#https://betterexplained.com/articles/easy-permutations-and-combinations/
+#https://www.geeksforgeeks.org/permutation-and-combination-in-python/
 
 class Solution:
     # Solution 1
