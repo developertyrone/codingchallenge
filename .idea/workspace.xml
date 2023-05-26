@@ -5,26 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d70904-7cab-45c7-9aa1-16cdbb706296" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/bash/basic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bash/codingtest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bash/questions/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bash/test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/1_twosum[hashmap].py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/2_longestcharacter[slidingwindow].py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/3_LongestPalindromicSubstring[expandwindow].py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/4_ContainerWithTheWater[twopointer].py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/5_3sum[sort_twopointer].py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/bash/10thline.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/bash/Valid Phone Numbers.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/bash/word count.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/other/BestTimetoBuyandSellStock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/other/BestTimetoBuyandSellStockII.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/other/InvertTree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/other/TwoSum2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/other/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/6_RemoveNodeFromTheList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/7_Valid Parentheses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/10_Same Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/11_Subtree of Another Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/12_Kth Largest Element in a Stream.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/13_Last Stone Weight.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/14_Climbing Stairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/15_Min Cost Climbing Stairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/17_Happy Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/18_Plus One.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/1_containsDuplicate[array].py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/2_ValidAnagram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/3_ValidPalindrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/4_Reverse Linked List.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/5_Binary Search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/6_Linked List Cycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/7_Maximum Depth of Binary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/8_Diameter of Binary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/9_Balanced Binary Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bash/awk" beforeDir="false" afterPath="$PROJECT_DIR$/bash/awk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/5_3sum[sort_twopointer].py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/5_3sum[sort_twopointer].py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/python/find-second-maximum-number-in-a-list.py" root0="FORCE_HIGHLIGHTING" />
@@ -175,7 +177,9 @@
       <workItem from="1680493419853" duration="3477000" />
       <workItem from="1681355916578" duration="1837000" />
       <workItem from="1681691179618" duration="34681000" />
-      <workItem from="1683165546559" duration="2252000" />
+      <workItem from="1683165546559" duration="10882000" />
+      <workItem from="1683856479381" duration="618000" />
+      <workItem from="1683861385212" duration="20517000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680056986455</created>
@@ -191,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680317499178</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1683254944481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683254944481</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1683254974075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683254974075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +243,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hackerrank$test.coverage" NAME="test Coverage Results" MODIFIED="1682473774827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/other" />
-    <SUITE FILE_PATH="coverage/hackerrank$5_3sum_sort_twopointer_.coverage" NAME="5_3sum[sort_twopointer] Coverage Results" MODIFIED="1683165857312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
+    <SUITE FILE_PATH="coverage/hackerrank$5_3sum_sort_twopointer_.coverage" NAME="5_3sum[sort_twopointer] Coverage Results" MODIFIED="1683536557635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
   </component>
 </project>

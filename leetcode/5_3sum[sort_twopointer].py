@@ -1,4 +1,5 @@
 from typing import List
+from itertools import combinations
 #https://betterexplained.com/articles/easy-permutations-and-combinations/
 #https://www.geeksforgeeks.org/permutation-and-combination-in-python/
 
@@ -55,7 +56,8 @@ class Solution:
     # Solution 3
     def threeSum3(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
-        res, neg, pos, zero = [], [], [], []
+        neg, pos, zero = [], [], []
+        res= set()
         for i in nums:
             if (i < 0):
                 neg.append(i)
@@ -64,27 +66,41 @@ class Solution:
             else:
                 zero.append(i)
 
+        neg_set, pos_set = set(neg),set(pos)
         # for zero case
-        if (len(zero) >= 3):
-            res.append([0, 0, 0])
+        if zero:
+            if (len(zero) >= 3):
+                res.add((0, 0, 0))
+            for i in pos_set:
+                if -i in neg_set:
+                    res.add((0, i, -i))
 
-        # for pure negative or positive list
-        if (len(neg) == 0 or len(pos) == 0):
-            return res
+        # for positive list
+        for j in combinations(pos, 2):
+            target = -(j[0] + j[1])
+            if target in neg_set:
+                res.add(tuple([target, j[0], j[1]]))
 
-        # for negative and positive list
+        # for negative list
+        for j in combinations(neg, 2):
+            target = -(j[0] + j[1])
+            if target in pos_set:
+                res.add(tuple([target, j[0], j[1]]))
 
+        return res
 
 
 if __name__ == "__main__":
     s = Solution()
-    result = s.threeSum([-1,0,1,2,-1,-4])
-    print(result)
-    result = s.threeSum([0,0,0,0])
-    print(result)
-    result = s.threeSum([0, 0, 0])
-    print(result)
-    result = s.threeSum([0, 0, 1])
-    print(result)
-    result = s.threeSum2([-1,0,1,2,-1,-4])
+    # result = s.threeSum([-1,0,1,2,-1,-4])
+    # print(result)
+    # result = s.threeSum([0,0,0,0])
+    # print(result)
+    # result = s.threeSum([0, 0, 0])
+    # print(result)
+    # result = s.threeSum([0, 0, 1])
+    # print(result)
+    # result = s.threeSum2([-1,0,1,2,-1,-4])
+    # print(result)
+    result = s.threeSum3([-1, 0, 1, 2, -1, -4])
     print(result)
