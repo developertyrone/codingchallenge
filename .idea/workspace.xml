@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79d70904-7cab-45c7-9aa1-16cdbb706296" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/leetcode/6_RemoveNodeFromTheList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/7_Valid Parentheses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/10_Same Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/11_Subtree of Another Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/12_Kth Largest Element in a Stream.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/13_Last Stone Weight.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/14_Climbing Stairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/15_Min Cost Climbing Stairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/17_Happy Number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/18_Plus One.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/1_containsDuplicate[array].py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/2_ValidAnagram.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/3_ValidPalindrome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/4_Reverse Linked List.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/5_Binary Search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/6_Linked List Cycle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/7_Maximum Depth of Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/8_Diameter of Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode/9_Balanced Binary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/19_Single Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/20_Number of 1 Bits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neetcode/21_Counting Bits.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/5_3sum[sort_twopointer].py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/5_3sum[sort_twopointer].py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +162,8 @@
       <workItem from="1681691179618" duration="34681000" />
       <workItem from="1683165546559" duration="10882000" />
       <workItem from="1683856479381" duration="618000" />
-      <workItem from="1683861385212" duration="20517000" />
+      <workItem from="1683861385212" duration="22375000" />
+      <workItem from="1685179455401" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1680056986455</created>
@@ -209,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683254974075</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1685098091278</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685098091278</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
